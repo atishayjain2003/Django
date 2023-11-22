@@ -21,4 +21,6 @@ from First import views
 urlpatterns = [
     path('admin', admin.site.urls),
     path('home/', views.calion),
+    path('home/<slug:courseid>', views.coursedetails),
 ]
+
